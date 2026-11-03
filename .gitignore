@@ -1,0 +1,13 @@
+/target
+/dist
+/android/assistant/src/main/assets/
+/android/assistant/src/main/jniLibs/
+
+# Local Android configuration and signing keys
+/local.properties
+/.env
+/.env.local
+*.jks
+*.keystore
+
+Cargo.lock

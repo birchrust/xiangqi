@@ -1,0 +1,96 @@
+:root {
+    color-scheme: light;
+    font-family: system-ui, "Noto Sans CJK SC", sans-serif;
+    color: #35291e;
+    background: #f6f0e5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100dvh;
+    place-items: center;
+    padding: max(24px, env(safe-area-inset-top))
+        max(24px, env(safe-area-inset-right))
+        max(24px, env(safe-area-inset-bottom))
+        max(24px, env(safe-area-inset-left));
+}
+
+.welcome {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.piece {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 48px;
+    place-items: center;
+    border: 3px solid #a1392e;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #f6f0e5, 0 0 0 7px #a1392e;
+    color: #a1392e;
+    font-family: "Noto Serif CJK SC", serif;
+    font-size: 56px;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 32px;
+}
+
+p {
+    margin: 0 0 32px;
+    color: #746452;
+    line-height: 1.6;
+}
+
+button {
+    width: 100%;
+    min-height: 48px;
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #fffaf3;
+    background: #a1392e;
+    font: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+button:active {
+    background: #7c2b23;
+}
+
+.settings-button {
+    margin-top: 12px;
+    border: 1px solid #a1392e;
+    color: #a1392e;
+    background: transparent;
+}
+
+.settings-button:active {
+    background: #eadcc9;
+}
+
+button:focus-visible {
+    outline: 3px solid #35291e;
+    outline-offset: 4px;
+}
+
+.floating-error {
+    margin: 16px 0 0;
+    color: #a1392e;
+    font-size: 14px;
+}
